@@ -1,16 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Process safety review illustration</title>
+  <desc id="desc">Abstract illustration of risk assessment and process safety review in an industrial setting.</desc>
   <defs>
-    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#eee7df"/>
-      <stop offset="100%" stop-color="#dee4e0"/>
+    <linearGradient id="g3" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f0e7da"/>
+      <stop offset="100%" stop-color="#e0ebea"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="900" fill="url(#g3)"/>
-  <rect x="90" y="120" width="1020" height="660" rx="30" fill="#faf8f5" stroke="#d9d4cb" stroke-width="2"/>
-  <rect x="150" y="180" width="900" height="34" rx="17" fill="#d8d3c7"/>
-  <rect x="150" y="260" width="220" height="210" rx="18" fill="#e7e1d4"/>
-  <rect x="410" y="260" width="220" height="210" rx="18" fill="#dfe7db"/>
-  <rect x="670" y="260" width="220" height="210" rx="18" fill="#e7e1d4"/>
-  <rect x="150" y="520" width="740" height="150" rx="20" fill="#e8e1d7"/>
-  <rect x="920" y="520" width="130" height="150" rx="20" fill="#dee4dc"/>
+  <rect width="800" height="600" fill="url(#g3)"/>
+  <rect x="90" y="110" width="620" height="330" rx="24" fill="rgba(255,255,255,0.62)" stroke="#d3c8ba"/>
+  <rect x="150" y="155" width="180" height="120" rx="18" fill="#2a2f32"/>
+  <rect x="360" y="155" width="260" height="18" rx="9" fill="#c79c5d"/>
+  <rect x="360" y="205" width="220" height="14" rx="7" fill="#d8d3cb"/>
+  <rect x="360" y="240" width="190" height="14" rx="7" fill="#d8d3cb"/>
+  <path d="M160 354h260" stroke="#b76d1b" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="240" cy="417" r="62" fill="#1f2325"/>
+  <path d="M240 385v64m-32-32h64" stroke="#fff" stroke-width="12" stroke-linecap="round"/>
+  <rect x="345" y="360" width="230" height="86" rx="18" fill="#efe4d3"/>
+  <path d="M390 405h140" stroke="#1b1d1f" stroke-width="10" stroke-linecap="round"/>
+  <path d="M390 430h102" stroke="#8a8e92" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="535" cy="80" r="42" fill="#b76d1b" opacity="0.9"/>
+  <path d="M520 80h30m-15-15v30" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
 </svg>

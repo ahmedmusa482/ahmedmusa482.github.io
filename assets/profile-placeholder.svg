@@ -1,12 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Ahmed Musa portrait placeholder</title>
+  <desc id="desc">Stylized profile illustration in warm neutral tones with a professional portrait feel.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#f2eee7"/>
-      <stop offset="100%" stop-color="#dfe3d7"/>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f3dfc0"/>
+      <stop offset="100%" stop-color="#d6c1a4"/>
+    </linearGradient>
+    <linearGradient id="shirt" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#2d3135"/>
+      <stop offset="100%" stop-color="#1a1d20"/>
     </linearGradient>
   </defs>
-  <rect width="800" height="1000" fill="url(#bg)"/>
-  <circle cx="400" cy="330" r="180" fill="#d6d3c9" opacity="0.8"/>
-  <path d="M220 740 Q400 560 580 740 L580 960 L220 960 Z" fill="#1d1f21" opacity="0.12"/>
-  <text x="400" y="520" text-anchor="middle" font-size="180" font-family="Segoe UI, Arial, sans-serif" font-weight="700" fill="#1d1f21" opacity="0.9">AM</text>
+  <rect width="900" height="1100" fill="url(#bg)"/>
+  <circle cx="450" cy="270" r="180" fill="#f0d9b9"/>
+  <path d="M255 905c20-170 120-240 195-240s176 70 195 240" fill="url(#shirt)"/>
+  <path d="M323 390c15-128 76-188 140-188 89 0 146 78 150 198-28 18-65 31-104 31-86 0-155-22-186-41z" fill="#f3d2a3"/>
+  <path d="M385 368c18-56 60-95 111-95 70 0 117 52 120 123-39 24-75 35-118 35-42 0-87-18-113-63z" fill="#1b1d1f"/>
+  <path d="M401 348c24-35 63-51 104-48 39 3 71 20 92 52-18 13-36 22-63 28-34 8-73 5-133-32z" fill="#2a2d30"/>
+  <circle cx="430" cy="432" r="12" fill="#3a2a1f"/>
+  <circle cx="535" cy="432" r="12" fill="#3a2a1f"/>
+  <path d="M440 510c42 27 102 27 142 0" fill="none" stroke="#9e6242" stroke-width="12" stroke-linecap="round"/>
+  <path d="M220 930c90-90 160-95 230-95 78 0 150 20 230 95" fill="none" stroke="#b76d1b" stroke-width="14" stroke-linecap="round" opacity="0.9"/>
+  <rect x="610" y="260" width="190" height="130" rx="20" fill="rgba(255,255,255,0.28)"/>
+  <text x="650" y="315" font-size="44" font-family="Segoe UI, Arial, sans-serif" fill="#1b1d1f" font-weight="700">QHSE</text>
+  <text x="650" y="355" font-size="26" font-family="Segoe UI, Arial, sans-serif" fill="#4b4d50" font-weight="600">Process Safety</text>
 </svg>

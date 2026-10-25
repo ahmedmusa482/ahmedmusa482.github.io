@@ -1,16 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Project site work illustration</title>
+  <desc id="desc">Abstract industrial field operation and safety oversight illustration.</desc>
   <defs>
-    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#efe9e1"/>
-      <stop offset="100%" stop-color="#dfe4e3"/>
+    <linearGradient id="g2" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ece1d8"/>
+      <stop offset="100%" stop-color="#dfe9e7"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="900" fill="url(#g2)"/>
-  <rect x="120" y="120" width="960" height="660" rx="30" fill="#f9f7f4" stroke="#d9d6ce" stroke-width="2"/>
-  <circle cx="390" cy="390" r="170" fill="#e6ddcf"/>
-  <rect x="620" y="260" width="280" height="28" rx="14" fill="#d2c4a7"/>
-  <rect x="620" y="320" width="240" height="22" rx="11" fill="#d2c4a7"/>
-  <rect x="620" y="380" width="260" height="22" rx="11" fill="#d2c4a7"/>
-  <rect x="620" y="450" width="200" height="22" rx="11" fill="#d2c4a7"/>
-  <rect x="220" y="620" width="760" height="90" rx="18" fill="#ebe3d8"/>
+  <rect width="800" height="600" fill="url(#g2)"/>
+  <rect x="70" y="355" width="660" height="145" rx="28" fill="#e0d7cd"/>
+  <path d="M110 355l70-120h120l70 120z" fill="#2c3135"/>
+  <path d="M290 355l95-155h120l95 155z" fill="#3c4248"/>
+  <path d="M190 360l35-56h95l35 56z" fill="#d5a767"/>
+  <path d="M400 360l45-78h95l45 78z" fill="#b76d1b"/>
+  <circle cx="220" cy="420" r="60" fill="#f7f1ea"/>
+  <circle cx="595" cy="420" r="60" fill="#f7f1ea"/>
+  <path d="M220 248v92m-46-46h92" stroke="#fff" stroke-width="12" stroke-linecap="round"/>
+  <path d="M595 251v92m-46-46h92" stroke="#fff" stroke-width="12" stroke-linecap="round"/>
+  <rect x="90" y="120" width="160" height="54" rx="16" fill="rgba(255,255,255,0.6)"/>
+  <text x="120" y="155" font-size="26" font-family="Segoe UI, Arial, sans-serif" font-weight="700" fill="#1b1d1f">FIELD</text>
+  <rect x="510" y="120" width="180" height="54" rx="16" fill="rgba(255,255,255,0.6)"/>
+  <text x="540" y="155" font-size="26" font-family="Segoe UI, Arial, sans-serif" font-weight="700" fill="#1b1d1f">SAFETY</text>
 </svg>

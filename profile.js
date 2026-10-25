@@ -4,7 +4,7 @@ const profile = {
   summary:
     "Experienced QHSE professional and process safety specialist focused on developing, implementing, and monitoring effective health, safety, quality, and environmental management systems in energy and industrial operations.",
   about:
-    "I aspire to succeed in an environment of growth that provides job satisfaction, self-development, and helps me achieve both personal and organizational goals. I am passionate about building safer workplaces, strengthening operational integrity, and creating sustainable safety systems that protect people, assets, and the environment.",
+    "I aspire to succeed in an environment of growth that provides job satisfaction, self-development, and helps me achieve both personal and organizational goals. I am passionate about building safe, compliant, and efficient work environments while improving operational performance through discipline, technical knowledge, and continuous improvement.",
   location: "Egbin Housing Estate, Lagos",
   phone: "09060634772",
   email: "ahmedmusa482@gmail.com",
@@ -15,6 +15,11 @@ const profile = {
     { value: "PSM", label: "Process safety management" },
     { value: "HAZOP", label: "Risk and hazard reviews" },
     { value: "ATEX", label: "Hazardous area classification" }
+  ],
+  metrics: [
+    { value: "12+", label: "Safety studies & audits" },
+    { value: "100%", label: "Compliance mindset" },
+    { value: "24/7", label: "Operational awareness" }
   ],
   expertise: [
     "Hazardous Area Classification (ATEX/IECEx)",
@@ -91,6 +96,7 @@ const heroTitle = document.getElementById("hero-title");
 const heroSummary = document.getElementById("hero-summary");
 const aboutText = document.getElementById("about-text");
 const statsNode = document.getElementById("stats");
+const metricsNode = document.getElementById("metrics");
 const experienceListNode = document.getElementById("experience-list");
 const galleryNode = document.getElementById("gallery");
 const certsNode = document.getElementById("certs");
@@ -106,6 +112,13 @@ profile.stats.forEach((item) => {
   stat.className = "stat";
   stat.innerHTML = `<strong>${item.value}</strong><span>${item.label}</span>`;
   statsNode.appendChild(stat);
+});
+
+profile.metrics.forEach((item) => {
+  const metric = document.createElement("div");
+  metric.className = "metric";
+  metric.innerHTML = `<strong>${item.value}</strong><span>${item.label}</span>`;
+  metricsNode.appendChild(metric);
 });
 
 profile.experience.forEach((job) => {
@@ -157,8 +170,7 @@ profile.expertise.forEach((skill) => {
   expertiseNode.appendChild(skillEl);
 });
 
-const expertiseSection = document.getElementById("about");
-const aboutPanel = expertiseSection.querySelector(".panel");
+const aboutPanel = document.querySelector("#about .panel");
 aboutPanel.appendChild(expertiseNode);
 
 const nav = document.querySelector(".nav");

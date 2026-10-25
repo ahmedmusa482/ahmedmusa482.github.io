@@ -1,16 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">QHSE Audit illustration</title>
+  <desc id="desc">Abstract illustration showing a professional audit and safety inspection theme.</desc>
   <defs>
-    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#ece6df"/>
-      <stop offset="100%" stop-color="#dfe3dd"/>
+    <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#efe3d0"/>
+      <stop offset="100%" stop-color="#d9e4e1"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="900" fill="url(#g1)"/>
-  <rect x="80" y="80" width="1040" height="740" rx="34" fill="#f8f7f4" stroke="#d9d6cd" stroke-width="2"/>
-  <rect x="130" y="130" width="260" height="170" rx="18" fill="#e8e3d8"/>
-  <rect x="430" y="130" width="560" height="28" rx="14" fill="#d8d0c3"/>
-  <rect x="430" y="190" width="500" height="22" rx="11" fill="#d8d0c3"/>
-  <rect x="130" y="340" width="500" height="270" rx="18" fill="#dfe5df"/>
-  <rect x="670" y="340" width="390" height="270" rx="18" fill="#e8e3d8"/>
-  <rect x="130" y="640" width="930" height="120" rx="18" fill="#eae4d9"/>
+  <rect width="800" height="600" fill="url(#g1)"/>
+  <rect x="75" y="110" width="650" height="370" rx="30" fill="rgba(255,255,255,0.66)" stroke="#d0c6b8"/>
+  <rect x="130" y="165" width="220" height="18" rx="9" fill="#c7a779"/>
+  <rect x="130" y="210" width="320" height="14" rx="7" fill="#d8d3cb"/>
+  <rect x="130" y="245" width="290" height="14" rx="7" fill="#d8d3cb"/>
+  <rect x="130" y="280" width="340" height="14" rx="7" fill="#d8d3cb"/>
+  <rect x="520" y="180" width="140" height="140" rx="20" fill="#1c2022"/>
+  <circle cx="590" cy="240" r="35" fill="#d7a35b"/>
+  <path d="M565 230l17 18 32-39" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="120" y="360" width="220" height="70" rx="20" fill="#b76d1b" opacity="0.9"/>
+  <text x="155" y="405" font-size="34" font-family="Segoe UI, Arial, sans-serif" font-weight="700" fill="#fff">AUDIT</text>
+  <path d="M430 392h220" stroke="#c2b29a" stroke-width="12" stroke-linecap="round"/>
+  <path d="M430 430h165" stroke="#d8d3cb" stroke-width="10" stroke-linecap="round"/>
 </svg>
