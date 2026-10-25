@@ -16,7 +16,6 @@
             --text: #0f172a;
             --muted: #475569;
             --line: rgba(15, 23, 42, 0.08);
-            --success: #166534;
         }
 
         * { box-sizing: border-box; }
@@ -31,10 +30,7 @@
 
         a { color: inherit; text-decoration: none; }
 
-        .container {
-            width: min(1100px, calc(100% - 2rem));
-            margin: 0 auto;
-        }
+        .container { width: min(1100px, calc(100% - 2rem)); margin: 0 auto; }
 
         header {
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-soft) 100%);
@@ -142,16 +138,31 @@
             height: 220px;
             margin: 0 auto 1rem;
             border-radius: 50%;
-            border: 3px solid rgba(255,255,255,0.25);
-            background: linear-gradient(135deg, rgba(255,255,255,0.18), rgba(217,119,6,0.22));
+            background: radial-gradient(circle at 30% 25%, #ffe7b8 0%, #f59e0b 18%, #0f172a 60%, #1e293b 100%);
             display: grid;
             place-items: center;
-            text-align: center;
-            color: white;
-            font-weight: 700;
-            letter-spacing: 0.04em;
-            font-size: 0.8rem;
-            padding: 1rem;
+            position: relative;
+            box-shadow: inset 0 0 0 4px rgba(255,255,255,0.12), 0 15px 30px rgba(15,23,42,0.18);
+            overflow: hidden;
+        }
+
+        .profile-photo::before {
+            content: "AM";
+            font-size: 3rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            color: rgba(255,255,255,0.96);
+            z-index: 1;
+        }
+
+        .profile-photo::after {
+            content: "";
+            position: absolute;
+            inset: auto 15% 18% 15%;
+            height: 22%;
+            border-radius: 50% 50% 45% 45%;
+            background: rgba(255,255,255,0.14);
+            filter: blur(10px);
         }
 
         .profile-card h3 {
@@ -179,10 +190,7 @@
         }
 
         main { padding: 3.2rem 0 4rem; }
-
-        section {
-            margin-bottom: 2.8rem;
-        }
+        section { margin-bottom: 2.8rem; }
 
         .section-head {
             display: flex;
@@ -293,23 +301,9 @@
             margin-bottom: 0.3rem;
         }
 
-        .job h3 {
-            margin: 0;
-            color: var(--primary);
-            font-size: 1.25rem;
-        }
-
-        .job .company {
-            color: var(--accent);
-            font-weight: 700;
-            font-size: 0.96rem;
-        }
-
-        .job .date {
-            color: var(--muted);
-            font-size: 0.92rem;
-            font-weight: 700;
-        }
+        .job h3 { margin: 0; color: var(--primary); font-size: 1.25rem; }
+        .job .company { color: var(--accent); font-weight: 700; font-size: 0.96rem; }
+        .job .date { color: var(--muted); font-size: 0.92rem; font-weight: 700; }
 
         .job ul {
             margin: 0.8rem 0 0;
@@ -350,10 +344,7 @@
             margin-bottom: 0.8rem;
         }
 
-        .project p {
-            margin: 0;
-            color: var(--muted);
-        }
+        .project p { margin: 0; color: var(--muted); }
 
         .grid-2 {
             display: grid;
@@ -394,15 +385,8 @@
             padding: 1.5rem 1.3rem;
         }
 
-        .contact-box h3 {
-            margin: 0 0 0.25rem;
-            font-size: 1.5rem;
-        }
-
-        .contact-box p {
-            margin: 0;
-            color: rgba(255,255,255,0.8);
-        }
+        .contact-box h3 { margin: 0 0 0.25rem; font-size: 1.5rem; }
+        .contact-box p { margin: 0; color: rgba(255,255,255,0.8); }
 
         .contact-links {
             display: flex;
@@ -425,28 +409,11 @@
             font-size: 0.96rem;
         }
 
-        @media (max-width: 850px) {
-            .hero, .about-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
+        @media (max-width: 850px) { .hero, .about-grid { grid-template-columns: 1fr; } }
         @media (max-width: 600px) {
-            .topbar,
-            .section-head,
-            .job-header,
-            .contact-box {
-                display: block;
-            }
-
-            .nav {
-                margin-top: 0.8rem;
-            }
-
-            .cta-row {
-                flex-direction: column;
-                align-items: flex-start;
-            }
+            .topbar, .section-head, .job-header, .contact-box { display: block; }
+            .nav { margin-top: 0.8rem; }
+            .cta-row { flex-direction: column; align-items: flex-start; }
         }
     </style>
 </head>
@@ -479,7 +446,7 @@
                 </div>
 
                 <aside class="profile-card">
-                    <div class="profile-photo">YOUR PHOTO</div>
+                    <div class="profile-photo" aria-label="Profile photo placeholder"></div>
                     <h3>Professional Snapshot</h3>
                     <ul class="contact-mini">
                         <li>Egbin Housing Estate, Lagos</li>
@@ -508,22 +475,10 @@
                     </div>
 
                     <div class="stats">
-                        <div class="stat">
-                            <strong>5+</strong>
-                            <span>Years in QHSE and process operations</span>
-                        </div>
-                        <div class="stat">
-                            <strong>PSM</strong>
-                            <span>Process safety management expertise</span>
-                        </div>
-                        <div class="stat">
-                            <strong>HAZOP</strong>
-                            <span>Risk and hazard identification</span>
-                        </div>
-                        <div class="stat">
-                            <strong>ATEX</strong>
-                            <span>Hazardous area classification</span>
-                        </div>
+                        <div class="stat"><strong>5+</strong><span>Years in QHSE and process operations</span></div>
+                        <div class="stat"><strong>PSM</strong><span>Process safety management expertise</span></div>
+                        <div class="stat"><strong>HAZOP</strong><span>Risk and hazard identification</span></div>
+                        <div class="stat"><strong>ATEX</strong><span>Hazardous area classification</span></div>
                     </div>
                 </div>
             </section>
@@ -609,21 +564,6 @@
                             <li>Conducted facility inspections and implemented HSE controls.</li>
                             <li>Managed technical operations of LPG storage and handling processes.</li>
                             <li>Trained drivers and operators on safe LPG discharge and emergency procedures.</li>
-                        </ul>
-                    </article>
-
-                    <article class="job">
-                        <div class="job-header">
-                            <div>
-                                <h3>Process Safety Consultant</h3>
-                                <div class="company">Qodar_lush International Limited</div>
-                            </div>
-                            <div class="date">2025 – Present</div>
-                        </div>
-                        <ul>
-                            <li>Led Hazardous Area Classification (HAC) and zoning study at OML 148 Mooring Facility Measurement Station.</li>
-                            <li>Delivered HAC drawings, equipment registers, and P&amp;ID zoning overlays.</li>
-                            <li>Conducted site verification and compliance checks to IEC 60079 and ATEX standards.</li>
                         </ul>
                     </article>
                 </div>
